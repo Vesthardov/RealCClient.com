@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyClient — Лучший Minecraft клиент</title>
+    <title>CClient — Лучший Minecraft клиент</title>
     
-    <!-- Google Fonts - Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome для иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        /* ===== БАЗОВЫЕ СТИЛИ ===== */
         * {
             margin: 0;
             padding: 0;
@@ -49,7 +45,6 @@
             color: inherit;
         }
 
-        /* ===== ШАПКА (HEADER) ===== */
         header {
             position: fixed;
             top: 0;
@@ -119,7 +114,6 @@
             color: var(--text-primary);
         }
 
-        /* ===== HERO СЕКЦИЯ ===== */
         .hero {
             position: relative;
             min-height: 100vh;
@@ -130,7 +124,6 @@
             overflow: hidden;
         }
 
-        /* Видео фон - замените placeholder.mp4 на реальное видео */
         .hero-video {
             position: absolute;
             top: 50%;
@@ -144,7 +137,6 @@
             object-fit: cover;
         }
 
-        /* Затемнение поверх видео */
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -160,7 +152,6 @@
             z-index: -1;
         }
 
-        /* Плейсхолдер для видео (если видео не загрузилось) */
         .hero-placeholder {
             position: absolute;
             top: 0;
@@ -257,7 +248,6 @@
             box-shadow: 0 8px 40px var(--accent-glow);
         }
 
-        /* ===== СЕКЦИЯ ПРЕИМУЩЕСТВ ===== */
         .features {
             padding: 6rem 2rem;
             background: var(--bg-secondary);
@@ -349,7 +339,6 @@
             line-height: 1.7;
         }
 
-        /* ===== CTA СЕКЦИЯ ===== */
         .cta {
             padding: 8rem 2rem;
             text-align: center;
@@ -373,7 +362,6 @@
             font-size: 1.2rem;
         }
 
-        /* ===== ПОДВАЛ (FOOTER) ===== */
         footer {
             background: var(--bg-card);
             padding: 3rem 2rem;
@@ -417,7 +405,6 @@
             font-size: 1.3rem;
         }
 
-        /* ===== АДАПТИВНОСТЬ ===== */
         @media (max-width: 768px) {
             header {
                 padding: 1rem;
@@ -478,7 +465,6 @@
             }
         }
 
-        /* ===== АНИМАЦИИ ПРИ СКРОЛЛЕ ===== */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -492,10 +478,9 @@
     </style>
 </head>
 <body>
-    <!-- ===== ШАПКА ===== -->
     <header>
         <div class="logo">
-            <i class="fab fa-python"></i>PyClient
+            <i class="fas fa-c"></i>CClient
         </div>
         <nav>
             <ul id="nav-menu">
@@ -509,33 +494,20 @@
         </div>
     </header>
 
-    <!-- ===== ГЛАВНЫЙ ЭКРАН (HERO) ===== -->
     <section class="hero" id="hero">
-        <!-- Плейсхолдер фона (если видео не загрузится) -->
         <div class="hero-placeholder"></div>
-        
-        <!-- 
-            TODO: Замените src на путь к вашему видео.
-            Рекомендуемый формат: MP4, разрешение 1920x1080, 
-            сжатый для веба (10-20 МБ).
-        -->
         <video class="hero-video" autoplay muted loop playsinline poster="">
             <source src="placeholder.mp4" type="video/mp4">
-            <!-- Если видео не поддерживается, будет показан плейсхолдер -->
         </video>
-        
-        <!-- Затемнение видео -->
         <div class="hero-overlay"></div>
         
         <div class="hero-content">
-            <h1>PyClient</h1>
+            <h1>CClient</h1>
             <h2>Лучший клиент для твоих побед в Майнкрафт.</h2>
             <div class="hero-buttons">
-                <!-- TODO: Замените # на реальную ссылку на скачивание -->
                 <a href="#cta" class="btn btn-primary">
                     <i class="fas fa-download"></i> Скачать
                 </a>
-                <!-- TODO: Замените # на ссылку на ваш Discord-сервер -->
                 <a href="#" class="btn btn-secondary" target="_blank">
                     <i class="fab fa-discord"></i> Наш Discord
                 </a>
@@ -543,12 +515,10 @@
         </div>
     </section>
 
-    <!-- ===== СЕКЦИЯ ПРЕИМУЩЕСТВ ===== -->
     <section class="features" id="features">
         <div class="container">
             <h2 class="section-title">Наши преимущества</h2>
             <div class="features-grid">
-                <!-- Карточка 1 -->
                 <div class="feature-card fade-in">
                     <div class="feature-icon">
                         <i class="fas fa-rocket"></i>
@@ -557,7 +527,6 @@
                     <p>Увеличьте производительность игры в несколько раз. Наши оптимизации позволяют играть даже на слабых ПК.</p>
                 </div>
                 
-                <!-- Карточка 2 -->
                 <div class="feature-card fade-in">
                     <div class="feature-icon">
                         <i class="fas fa-puzzle-piece"></i>
@@ -566,7 +535,6 @@
                     <p>Встроенная коллекция самых популярных модов для PvP и не только. Всё работает из коробки.</p>
                 </div>
                 
-                <!-- Карточка 3 -->
                 <div class="feature-card fade-in">
                     <div class="feature-icon">
                         <i class="fas fa-palette"></i>
@@ -575,7 +543,6 @@
                     <p>Полностью настраиваемый интерфейс. Создайте клиент своей мечты с помощью гибких настроек.</p>
                 </div>
                 
-                <!-- Карточка 4 -->
                 <div class="feature-card fade-in">
                     <div class="feature-icon">
                         <i class="fas fa-shield-halved"></i>
@@ -587,20 +554,17 @@
         </div>
     </section>
 
-    <!-- ===== CTA СЕКЦИЯ ===== -->
     <section class="cta" id="cta">
-        <h2>Готов начать игру с PyClient?</h2>
+        <h2>Готов начать игру с CClient?</h2>
         <a href="https://drive.google.com/file/d/1WApuRhRwatr3rPXo_K16sV2EhdQmeUlR/view?usp=sharing" class="btn btn-primary" target="_blank">
             <i class="fas fa-download"></i> Скачать сейчас
         </a>
     </section>
 
-    <!-- ===== ПОДВАЛ (FOOTER) ===== -->
     <footer>
         <div class="footer-content">
-            <p class="footer-copyright">© 2026 PyClient. Все права защищены.</p>
+            <p class="footer-copyright">© 2026 CClient. Все права защищены.</p>
             <div class="footer-socials">
-                <!-- TODO: Замените # на реальные ссылки -->
                 <a href="#" target="_blank">
                     <i class="fab fa-discord"></i> Discord
                 </a>
@@ -614,22 +578,18 @@
         </div>
     </footer>
 
-    <!-- ===== JAVASCRIPT ===== -->
     <script>
-        // Мобильное меню
         function toggleMenu() {
             const menu = document.getElementById('nav-menu');
             menu.classList.toggle('active');
         }
 
-        // Закрытие меню при клике на ссылку
         document.querySelectorAll('#nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('nav-menu').classList.remove('active');
             });
         });
 
-        // Анимация появления элементов при скролле
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -647,11 +607,9 @@
             observer.observe(el);
         });
 
-        // Плавный скролл для старых браузеров (только для внутренних ссылок)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
-                // Пропускаем если это просто "#" (заглушка)
                 if (href === '#') return;
                 
                 e.preventDefault();
